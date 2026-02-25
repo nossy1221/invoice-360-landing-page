@@ -7,23 +7,36 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <!-- navigation -->
-        <nav class="navbar">
+    <!-- navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
             <div class="logo">Invoice<span class="logo-highlight">360</span></div>
-            <div class="nav-links">
-                <a href="#">Features</a>
-                <a href="#">Pricing</a>
-                <a href="#">About</a>
-            </div>
+            
+            <!-- Desktop Menu -->
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
+                <li class="nav-item"><a href="#how-it-works" class="nav-link">How It Works</a></li>
+                <li class="nav-item"><a href="#pricing" class="nav-link">Pricing</a></li>
+            </ul>
+            
             <div class="nav-buttons">
                 <button class="btn-outline" onclick="window.location.href='login.html'">Login</button>
                 <button class="btn-primary" onclick="window.location.href='signup.html'">Get Started Free →</button>
             </div>
-        </nav>
+            
+            <!-- Hamburger Menu Icon -->
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
-        <!-- hero section - centered -->
-        <div class="hero">
+    <div class="container">
+        <!-- hero section - with accounting professional image -->
+        <section id="home" class="hero">
             <div class="hero-content">
                 <span class="badge">🚀 #1 Invoicing Solution for Southern Africa</span>
                 <h1>
@@ -36,7 +49,13 @@
                     <button class="btn-outline" onclick="window.location.href='login.html'">Login</button>
                 </div>
             </div>
-        </div>
+            <div class="hero-image">
+                <img src="https://images.pexels.com/photos/8297051/pexels-photo-8297051.jpeg" 
+                     alt="Professional woman working with laptop" 
+                     class="accountant-image">
+                <div class="image-accent"></div>
+            </div>
+        </section>
 
         <!-- dashboard image -->
         <div class="dashboard-image-container">
@@ -44,7 +63,7 @@
         </div>
 
         <!-- features grid -->
-        <div class="features-grid">
+        <section id="features" class="features-grid">
             <div class="feature-card">
                 <div class="feature-icon">📊</div>
                 <h3>Dashboard Analytics</h3>
@@ -85,39 +104,41 @@
                 <h3>Inventory Management</h3>
                 <p>Keep track of your products and services with simple inventory tools.</p>
             </div>
-        </div>
+        </section>
 
         <!-- How it works -->
-        <div class="section-title">
-            <h2>How It Works</h2>
-            <p>Simplify your workflow in 4 easy steps</p>
-        </div>
-        
-        <div class="steps">
-            <div class="step">
-                <div class="number">1</div>
-                <h4>Create Quote</h4>
-                <p>Send a professional estimate to your client for approval.</p>
+        <section id="how-it-works">
+            <div class="section-title">
+                <h2>How It Works</h2>
+                <p>Simplify your workflow in 4 easy steps</p>
             </div>
-            <div class="step">
-                <div class="number">2</div>
-                <h4>Convert to Invoice</h4>
-                <p>Turn accepted quotes into invoices instantly.</p>
+            
+            <div class="steps">
+                <div class="step">
+                    <div class="number">1</div>
+                    <h4>Create Quote</h4>
+                    <p>Send a professional estimate to your client for approval.</p>
+                </div>
+                <div class="step">
+                    <div class="number">2</div>
+                    <h4>Convert to Invoice</h4>
+                    <p>Turn accepted quotes into invoices instantly.</p>
+                </div>
+                <div class="step">
+                    <div class="number">3</div>
+                    <h4>Deliver Service</h4>
+                    <p>Complete the work or deliver the products.</p>
+                </div>
+                <div class="step">
+                    <div class="number">4</div>
+                    <h4>Get Paid</h4>
+                    <p>Receive payment and track it automatically.</p>
+                </div>
             </div>
-            <div class="step">
-                <div class="number">3</div>
-                <h4>Deliver Service</h4>
-                <p>Complete the work or deliver the products.</p>
-            </div>
-            <div class="step">
-                <div class="number">4</div>
-                <h4>Get Paid</h4>
-                <p>Receive payment and track it automatically.</p>
-            </div>
-        </div>
+        </section>
 
         <!-- pricing section with three columns - CREATIVE MEDAL DESIGN -->
-        <div class="pricing-section">
+        <section id="pricing" class="pricing-section">
             <div class="section-title">
                 <h2>Choose Your <span class="highlight">Champion's Plan</span></h2>
                 <p>Select the medal that matches your business ambition</p>
@@ -367,72 +388,120 @@
                     <button class="pricing-btn gold-btn" onclick="window.location.href='login.html'">Buy Gold →</button>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- built for southern africa / currencies -->
-<div class="currency-section">
-    <h2 class="section-title" style="margin-bottom: 30px; color: white;">Built for Southern Africa</h2>
-    
-    <div class="currency-grid">
-        <!-- Column 1 -->
-        <div class="currency-column">
-            <div class="currency-item">
-                <span class="country-flag">🇿🇦</span>
-                <span class="country-name">South Africa</span>
-                <span class="currency-code">ZAR</span>
-            </div>
-            <div class="currency-item">
-                <span class="country-flag">🇳🇦</span>
-                <span class="country-name">Namibia</span>
-                <span class="currency-code">NAD</span>
-            </div>
-            <div class="currency-item">
-                <span class="country-flag">🇧🇼</span>
-                <span class="country-name">Botswana</span>
-                <span class="currency-code">BWP</span>
-            </div>
-            <div class="currency-item">
-                <span class="country-flag">🇱🇸</span>
-                <span class="country-name">Lesotho</span>
-                <span class="currency-code">LSL</span>
-            </div>
-            <div class="currency-item">
-                <span class="country-flag">🇸🇿</span>
-                <span class="country-name">Eswatini</span>
-                <span class="currency-code">SZL</span>
+        <div class="currency-section">
+            <h2 class="section-title" style="margin-bottom: 30px; color: white;">Built for Southern Africa</h2>
+            
+            <div class="marquee-container">
+                <div class="marquee-content">
+                    <!-- First set of countries -->
+                    <div class="currency-item">
+                        <span class="country-flag">🇿🇦</span>
+                        <span class="country-name">South Africa</span>
+                        <span class="currency-code">ZAR</span>
+                    </div>
+                    <div class="currency-item">
+                        <span class="country-flag">🇳🇦</span>
+                        <span class="country-name">Namibia</span>
+                        <span class="currency-code">NAD</span>
+                    </div>
+                    <div class="currency-item">
+                        <span class="country-flag">🇧🇼</span>
+                        <span class="country-name">Botswana</span>
+                        <span class="currency-code">BWP</span>
+                    </div>
+                    <div class="currency-item">
+                        <span class="country-flag">🇱🇸</span>
+                        <span class="country-name">Lesotho</span>
+                        <span class="currency-code">LSL</span>
+                    </div>
+                    <div class="currency-item">
+                        <span class="country-flag">🇸🇿</span>
+                        <span class="country-name">Eswatini</span>
+                        <span class="currency-code">SZL</span>
+                    </div>
+                    <div class="currency-item">
+                        <span class="country-flag">🇿🇲</span>
+                        <span class="country-name">Zambia</span>
+                        <span class="currency-code">ZMW</span>
+                    </div>
+                    <div class="currency-item">
+                        <span class="country-flag">🇿🇼</span>
+                        <span class="country-name">Zimbabwe</span>
+                        <span class="currency-code">ZiG</span>
+                    </div>
+                    <div class="currency-item">
+                        <span class="country-flag">🇲🇿</span>
+                        <span class="country-name">Mozambique</span>
+                        <span class="currency-code">MZN</span>
+                    </div>
+                    <div class="currency-item">
+                        <span class="country-flag">🇲🇼</span>
+                        <span class="country-name">Malawi</span>
+                        <span class="currency-code">MWK</span>
+                    </div>
+                    <div class="currency-item">
+                        <span class="country-flag">🇦🇴</span>
+                        <span class="country-name">Angola</span>
+                        <span class="currency-code">AOA</span>
+                    </div>
+                    
+                    <!-- Duplicate set for seamless loop -->
+                    <div class="currency-item">
+                        <span class="country-flag">🇿🇦</span>
+                        <span class="country-name">South Africa</span>
+                        <span class="currency-code">ZAR</span>
+                    </div>
+                    <div class="currency-item">
+                        <span class="country-flag">🇳🇦</span>
+                        <span class="country-name">Namibia</span>
+                        <span class="currency-code">NAD</span>
+                    </div>
+                    <div class="currency-item">
+                        <span class="country-flag">🇧🇼</span>
+                        <span class="country-name">Botswana</span>
+                        <span class="currency-code">BWP</span>
+                    </div>
+                    <div class="currency-item">
+                        <span class="country-flag">🇱🇸</span>
+                        <span class="country-name">Lesotho</span>
+                        <span class="currency-code">LSL</span>
+                    </div>
+                    <div class="currency-item">
+                        <span class="country-flag">🇸🇿</span>
+                        <span class="country-name">Eswatini</span>
+                        <span class="currency-code">SZL</span>
+                    </div>
+                    <div class="currency-item">
+                        <span class="country-flag">🇿🇲</span>
+                        <span class="country-name">Zambia</span>
+                        <span class="currency-code">ZMW</span>
+                    </div>
+                    <div class="currency-item">
+                        <span class="country-flag">🇿🇼</span>
+                        <span class="country-name">Zimbabwe</span>
+                        <span class="currency-code">ZiG</span>
+                    </div>
+                    <div class="currency-item">
+                        <span class="country-flag">🇲🇿</span>
+                        <span class="country-name">Mozambique</span>
+                        <span class="currency-code">MZN</span>
+                    </div>
+                    <div class="currency-item">
+                        <span class="country-flag">🇲🇼</span>
+                        <span class="country-name">Malawi</span>
+                        <span class="currency-code">MWK</span>
+                    </div>
+                    <div class="currency-item">
+                        <span class="country-flag">🇦🇴</span>
+                        <span class="country-name">Angola</span>
+                        <span class="currency-code">AOA</span>
+                    </div>
+                </div>
             </div>
         </div>
-        
-        <!-- Column 2 -->
-        <div class="currency-column">
-            <div class="currency-item">
-                <span class="country-flag">🇿🇲</span>
-                <span class="country-name">Zambia</span>
-                <span class="currency-code">ZMW</span>
-            </div>
-            <div class="currency-item">
-                <span class="country-flag">🇿🇼</span>
-                <span class="country-name">Zimbabwe</span>
-                <span class="currency-code">ZiG</span>
-            </div>
-            <div class="currency-item">
-                <span class="country-flag">🇲🇿</span>
-                <span class="country-name">Mozambique</span>
-                <span class="currency-code">MZN</span>
-            </div>
-            <div class="currency-item">
-                <span class="country-flag">🇲🇼</span>
-                <span class="country-name">Malawi</span>
-                <span class="currency-code">MWK</span>
-            </div>
-            <div class="currency-item">
-                <span class="country-flag">🇦🇴</span>
-                <span class="country-name">Angola</span>
-                <span class="currency-code">AOA</span>
-            </div>
-        </div>
-    </div>
-</div>
 
         <!-- testimonials -->
         <div class="testimonials-section">
@@ -470,5 +539,7 @@
             © 2025 Invoice360 – Premium invoicing for Southern Africa. All rights reserved.
         </footer>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
