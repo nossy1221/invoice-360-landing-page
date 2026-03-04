@@ -46,6 +46,17 @@ body {
     transition: all 0.3s ease;
 }
 
+.logo a {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 70px;
+    width: auto;
+    display: block;
+}
+
 .logo:hover {
     transform: scale(1.05);
 }
@@ -757,6 +768,13 @@ footer {
     color: #718096;
     border-top: 1px solid #e2e8f0;
     margin-top: 20px;
+}
+
+.footer-logo img {
+    height: 70px;
+    width: auto;
+    display: block;
+    margin-bottom: 8px;
 }
 
 hr {
