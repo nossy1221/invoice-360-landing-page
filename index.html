@@ -4,11 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Invoice360 - Invoicing for Southern Africa</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Invoice360 helps South African freelancers and SMEs create invoices, track payments, and manage finances easily.">
+    <meta property="og:title" content="Invoice360 – Smart Invoicing for African Businesses">
+    <meta property="og:description" content="Create invoices, send via WhatsApp, track payments and grow your business.">
+    <meta property="og:image" content="/images/preview.png">
+    <link rel="canonical" href="https://invoice360.co.za">
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- navigation -->
+
+    <!-- NAVIGATION -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">
@@ -16,21 +25,19 @@
                     <img src="assets/logo.png" alt="Invoice 360 Logo">
                 </a>
             </div>
-            
-            <!-- Desktop Menu -->
+
             <ul class="nav-menu" id="nav-menu">
                 <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
                 <li class="nav-item"><a href="#how-it-works" class="nav-link">How It Works</a></li>
                 <li class="nav-item"><a href="#pricing" class="nav-link">Pricing</a></li>
             </ul>
-            
+
             <div class="nav-buttons">
                 <button class="btn-outline" onclick="window.location.href='https://papaya-begonia-100409.netlify.app/login'">Login</button>
-                <button class="btn-primary" onclick="window.location.href='https://papaya-begonia-100409.netlify.app/login'">Get Started Free →</button>
+                <button class="btn-primary" onclick="window.location.href='https://papaya-begonia-100409.netlify.app/signup'">Get Started Free &rarr;</button>
             </div>
-            
-            <!-- Hamburger Menu Icon -->
+
             <div class="hamburger" id="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -40,84 +47,93 @@
     </nav>
 
     <div class="container">
-        <!-- hero section - with accounting professional image -->
+
+        <!-- HERO SECTION -->
         <section id="home" class="hero">
             <div class="hero-content">
-                <span class="badge">🚀 #1 Invoicing Solution for Southern Africa</span>
+                <span class="badge">&#128640; #1 Invoicing Solution for Southern Africa</span>
                 <h1>
-                    Manage Invoices & Payments<br>
+                    Manage Invoices &amp; Payments<br>
                     <span class="highlight">Smarter with Invoice360</span>
                 </h1>
                 <p class="hero-description">The all-in-one financial platform for freelancers and small businesses. Create quotes, track payments, and automate your workflow in seconds.</p>
                 <div class="hero-buttons">
-                    <button class="btn-primary" onclick="window.location.href='https://papaya-begonia-100409.netlify.app/login'">Get Started Free →</button>
+                    <button class="btn-primary" onclick="window.location.href='https://papaya-begonia-100409.netlify.app/signup'">Get Started Free &rarr;</button>
                     <button class="btn-outline" onclick="window.location.href='https://papaya-begonia-100409.netlify.app/login'">Login</button>
                 </div>
             </div>
             <div class="hero-image">
-                <img src="https://images.pexels.com/photos/8297051/pexels-photo-8297051.jpeg" 
-                     alt="Professional woman working with laptop" 
-                     class="accountant-image">
+                <img src="assets/dashboard-image.jpg" alt="Invoice360 Dashboard" class="accountant-image">
                 <div class="image-accent"></div>
             </div>
         </section>
 
-        <!-- dashboard image -->
-        <div class="dashboard-image-container">
-            <img src="assets/dashboard-image.jpg" alt="Invoice360 Dashboard" class="dashboard-image">
-        </div>
-
-        <!-- features grid -->
+        <!-- FEATURES GRID -->
         <section id="features" class="features-grid">
             <div class="feature-card">
-                <div class="feature-icon">📊</div>
+                <div class="feature-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#53b2a5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                </div>
                 <h3>Dashboard Analytics</h3>
                 <p>Get real-time insights into your revenue, expenses, and cash flow with intuitive charts.</p>
             </div>
             <div class="feature-card">
-                <div class="feature-icon">👥</div>
+                <div class="feature-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#53b2a5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                </div>
                 <h3>Client Management</h3>
                 <p>Organize client details, history, and communications in one centralized secure place.</p>
             </div>
             <div class="feature-card">
-                <div class="feature-icon">📄</div>
-                <h3>Quote & Invoice Builder</h3>
+                <div class="feature-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#53b2a5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                </div>
+                <h3>Quote &amp; Invoice Builder</h3>
                 <p>Create professional quotes and convert them to invoices with a single click.</p>
             </div>
             <div class="feature-card">
-                <div class="feature-icon">💰</div>
+                <div class="feature-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#53b2a5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                </div>
                 <h3>Payment Tracking</h3>
                 <p>Track paid, pending, and overdue invoices easily. Never miss a payment again.</p>
             </div>
             <div class="feature-card">
-                <div class="feature-icon">🌍</div>
+                <div class="feature-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#53b2a5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                </div>
                 <h3>Multi-Currency Support</h3>
                 <p>Support for ZAR, NAD, BWP, USD, and more. Perfect for cross-border business.</p>
             </div>
             <div class="feature-card">
-                <div class="feature-icon">📋</div>
-                <h3>Reports & Tax Summary</h3>
+                <div class="feature-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#53b2a5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                </div>
+                <h3>Reports &amp; Tax Summary</h3>
                 <p>Generate detailed financial reports and tax summaries for accounting periods.</p>
             </div>
             <div class="feature-card">
-                <div class="feature-icon">☁️</div>
+                <div class="feature-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#53b2a5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 17 21 12 16 7"/><path d="M21 12H9"/><path d="M3 21V3"/></svg>
+                </div>
                 <h3>Secure Cloud Access</h3>
                 <p>Your data is encrypted and backed up in the cloud. Access from anywhere, anytime.</p>
             </div>
             <div class="feature-card">
-                <div class="feature-icon">📦</div>
+                <div class="feature-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#53b2a5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                </div>
                 <h3>Inventory Management</h3>
                 <p>Keep track of your products and services with simple inventory tools.</p>
             </div>
         </section>
 
-        <!-- How it works -->
+        <!-- HOW IT WORKS -->
         <section id="how-it-works">
             <div class="section-title">
                 <h2>How It Works</h2>
                 <p>Simplify your workflow in 4 easy steps</p>
             </div>
-            
             <div class="steps">
                 <div class="step">
                     <div class="number">1</div>
@@ -142,421 +158,438 @@
             </div>
         </section>
 
-        <!-- pricing section with three columns - CREATIVE MEDAL DESIGN -->
+        <!-- DASHBOARD SHOWCASE -->
+        <section class="dashboard-showcase">
+            <div class="showcase-header">
+                <span class="badge">&#10024; See It In Action</span>
+                <h2>Everything You Need, <span class="highlight">All in One Place</span></h2>
+                <p>A powerful, clean dashboard designed to give you full control of your finances at a glance.</p>
+            </div>
+            <div class="showcase-image-wrapper">
+                <div class="showcase-glow"></div>
+                <img src="assets/dashboard-image.jpg" alt="Invoice360 Dashboard - Full View" class="showcase-image">
+                <div class="showcase-badge-tl">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                    Live Payment Tracking
+                </div>
+                <div class="showcase-badge-tr">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    Secure &amp; Encrypted
+                </div>
+                <div class="showcase-badge-br">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    Multi-Currency
+                </div>
+            </div>
+        </section>
+
+        <!-- WHY INVOICE360 -->
+        <section id="why-us" class="why-section">
+            <div class="section-title">
+                <h2>Why Choose <span class="highlight">Invoice360?</span></h2>
+                <p>Built specifically for Southern African businesses &mdash; not adapted from elsewhere</p>
+            </div>
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    </div>
+                    <h3>Send Invoices via WhatsApp</h3>
+                    <p>Reach your clients where they already are. Send professional invoices and quotes directly through WhatsApp in seconds.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    </div>
+                    <h3>Multi-Currency from Day One</h3>
+                    <p>ZAR, NAD, BWP, and more &mdash; handle cross-border billing without any manual conversions or workarounds.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                    </div>
+                    <h3>Invoicing + Inventory in One Place</h3>
+                    <p>No more switching between apps. Manage your products, services, and billing from a single dashboard.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h3>POPIA Compliant &amp; Secure</h3>
+                    <p>Your data and your clients' data are protected by South African POPIA standards and enterprise-grade encryption.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRICING -->
         <section id="pricing" class="pricing-section">
             <div class="section-title">
                 <h2>Choose Your <span class="highlight">Champion's Plan</span></h2>
                 <p>Select the medal that matches your business ambition</p>
             </div>
 
+            <!-- Billing Toggle -->
+            <div class="billing-toggle">
+                <span class="toggle-label" id="monthly-label">Monthly</span>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="billing-toggle-input">
+                    <span class="toggle-slider"></span>
+                </label>
+                <span class="toggle-label" id="yearly-label">Yearly <span class="save-badge">Save 20%</span></span>
+            </div>
+
             <div class="pricing-grid">
-                <!-- Bronze Plan -->
+
+                <!-- BRONZE -->
                 <div class="pricing-card bronze-card">
-                    <div class="medal-icon bronze-medal">🥉</div>
+                    <div class="medal-icon bronze-medal">&#129355;</div>
                     <div class="pricing-header">
                         <h3 class="plan-name bronze-text">BRONZE</h3>
                         <div class="plan-billing">Monthly</div>
-                        <div class="plan-price bronze-text">R129</div>
+                        <div class="plan-price bronze-text">
+                            <span class="price-monthly">R129</span>
+                            <span class="price-yearly" style="display:none">R103</span>
+                        </div>
                         <div class="plan-period">per month</div>
                     </div>
                     <div class="pricing-features">
                         <div class="feature-row">
-                            <span class="feature-name">Admin dashboard</span>
-                            <span class="feature-check yes">✓</span>
+                            <span class="feature-name">Admin Dashboard</span>
+                            <span class="feature-check yes">&#10003;</span>
                         </div>
                         <div class="feature-row">
                             <span class="feature-name">Dashboard Overview</span>
-                            <span class="feature-check yes">✓</span>
+                            <span class="feature-check yes">&#10003;</span>
                         </div>
                         <div class="feature-row">
-                            <span class="feature-name">Single User</span>
-                            <span class="feature-check yes">✓</span>
+                            <span class="feature-name">1 User Included</span>
+                            <span class="feature-check yes">&#10003;</span>
                         </div>
                         <div class="feature-row">
                             <span class="feature-name">Client Statements</span>
-                            <span class="feature-check yes">✓</span>
+                            <span class="feature-check yes">&#10003;</span>
                         </div>
                         <div class="feature-row">
-                            <span class="feature-name">Invoicing and Quoting</span>
-                            <span class="feature-check yes">✓</span>
+                            <span class="feature-name">Invoicing &amp; Quoting</span>
+                            <span class="feature-check yes">&#10003;</span>
                         </div>
                         <div class="feature-row">
                             <span class="feature-name">Recurring Invoices</span>
-                            <span class="feature-check yes">✓</span>
+                            <span class="feature-check yes">&#10003;</span>
                         </div>
                         <div class="feature-row">
-                            <span class="feature-name">Send quote via WhatsApp</span>
-                            <span class="feature-check yes">✓</span>
-                        </div>
-                        <div class="feature-row">
-                            <span class="feature-name">Multi users - 2+</span>
-                            <span class="feature-check no">✗</span>
-                        </div>
-                        <div class="feature-row">
-                            <span class="feature-name">Multi Store Inventory</span>
-                            <span class="feature-check no">✗</span>
-                        </div>
-                        <div class="feature-row">
-                            <span class="feature-name">Expense Management</span>
-                            <span class="feature-check no">✗</span>
-                        </div>
-                        <div class="feature-row">
-                            <span class="feature-name">Payment Tracking</span>
-                            <span class="feature-check no">✗</span>
-                        </div>
-                        <div class="feature-row">
-                            <span class="feature-name">Accounting Reports</span>
-                            <span class="feature-check no">✗</span>
-                        </div>
-                        <div class="feature-row">
-                            <span class="feature-name">Tax Calculation</span>
-                            <span class="feature-check no">✗</span>
-                        </div>
-                        <div class="feature-row">
-                            <span class="feature-name">WhatsApp Integration</span>
-                            <span class="feature-check no">✗</span>
-                        </div>
-                        <div class="feature-row">
-                            <span class="feature-name">Bank Reconciliation</span>
-                            <span class="feature-check no">✗</span>
-                        </div>
-                        <div class="feature-row">
-                            <span class="feature-name">Financial Reports</span>
-                            <span class="feature-check no">✗</span>
+                            <span class="feature-name">Send Quote via WhatsApp</span>
+                            <span class="feature-check yes">&#10003;</span>
                         </div>
                     </div>
-                    <button class="pricing-btn bronze-btn" onclick="window.location.href='https://papaya-begonia-100409.netlify.app/login'">Buy Bronze →</button>
+                    <button class="pricing-btn bronze-btn" onclick="window.location.href='https://papaya-begonia-100409.netlify.app/signup'">Start Free &rarr;</button>
                 </div>
 
-                <!-- Silver Plan -->
+                <!-- SILVER -->
                 <div class="pricing-card silver-card popular">
-                    <div class="popular-badge">🏆 MOST POPULAR</div>
-                    <div class="medal-icon silver-medal">🥈</div>
+                    <div class="popular-badge">&#127942; MOST POPULAR</div>
+                    <div class="medal-icon silver-medal">&#129356;</div>
                     <div class="pricing-header">
                         <h3 class="plan-name silver-text">SILVER</h3>
                         <div class="plan-billing">Monthly</div>
-                        <div class="plan-price silver-text">R169</div>
+                        <div class="plan-price silver-text">
+                            <span class="price-monthly">R169</span>
+                            <span class="price-yearly" style="display:none">R135</span>
+                        </div>
                         <div class="plan-period">per month</div>
                     </div>
                     <div class="pricing-features">
                         <div class="feature-row">
-                            <span class="feature-name">Admin dashboard</span>
-                            <span class="feature-check yes">✓</span>
+                            <span class="feature-name">Admin Dashboard</span>
+                            <span class="feature-check yes">&#10003;</span>
                         </div>
                         <div class="feature-row">
                             <span class="feature-name">Dashboard Overview</span>
-                            <span class="feature-check yes">✓</span>
+                            <span class="feature-check yes">&#10003;</span>
                         </div>
                         <div class="feature-row">
-                            <span class="feature-name">Multi users - 2+</span>
-                            <span class="feature-check yes">✓</span>
+                            <span class="feature-name">Up to 3 Users</span>
+                            <span class="feature-check yes">&#10003;</span>
                         </div>
                         <div class="feature-row">
                             <span class="feature-name">Multi Store Inventory</span>
-                            <span class="feature-check yes">✓</span>
+                            <span class="feature-check yes">&#10003;</span>
                         </div>
                         <div class="feature-row">
                             <span class="feature-name">Client Statements</span>
-                            <span class="feature-check yes">✓</span>
+                            <span class="feature-check yes">&#10003;</span>
                         </div>
                         <div class="feature-row">
-                            <span class="feature-name">Invoicing and Quoting</span>
-                            <span class="feature-check yes">✓</span>
+                            <span class="feature-name">Invoicing &amp; Quoting</span>
+                            <span class="feature-check yes">&#10003;</span>
                         </div>
                         <div class="feature-row">
                             <span class="feature-name">Expense Management</span>
-                            <span class="feature-check yes">✓</span>
+                            <span class="feature-check yes">&#10003;</span>
                         </div>
                         <div class="feature-row">
                             <span class="feature-name">Recurring Invoices</span>
-                            <span class="feature-check yes">✓</span>
+                            <span class="feature-check yes">&#10003;</span>
                         </div>
                         <div class="feature-row">
                             <span class="feature-name">Payment Tracking</span>
-                            <span class="feature-check yes">✓</span>
+                            <span class="feature-check yes">&#10003;</span>
                         </div>
                         <div class="feature-row">
                             <span class="feature-name">Accounting Reports</span>
-                            <span class="feature-check yes">✓</span>
+                            <span class="feature-check yes">&#10003;</span>
                         </div>
                         <div class="feature-row">
-                            <span class="feature-name">Send quote via WhatsApp</span>
-                            <span class="feature-check yes">✓</span>
+                            <span class="feature-name">Send Quote via WhatsApp</span>
+                            <span class="feature-check yes">&#10003;</span>
                         </div>
                         <div class="feature-row">
                             <span class="feature-name">Tax Calculation</span>
-                            <span class="feature-check yes">✓</span>
+                            <span class="feature-check yes">&#10003;</span>
                         </div>
                         <div class="feature-row">
                             <span class="feature-name">Expense Tracking</span>
-                            <span class="feature-check yes">✓</span>
+                            <span class="feature-check yes">&#10003;</span>
                         </div>
                         <div class="feature-row">
                             <span class="feature-name">WhatsApp Integration</span>
-                            <span class="feature-check yes">✓</span>
-                        </div>
-                        <div class="feature-row">
-                            <span class="feature-name">Single User</span>
-                            <span class="feature-check no">✗</span>
-                        </div>
-                        <div class="feature-row">
-                            <span class="feature-name">Bank Reconciliation</span>
-                            <span class="feature-check no">✗</span>
-                        </div>
-                        <div class="feature-row">
-                            <span class="feature-name">Financial Reports</span>
-                            <span class="feature-check no">✗</span>
+                            <span class="feature-check yes">&#10003;</span>
                         </div>
                     </div>
-                    <button class="pricing-btn silver-btn" onclick="window.location.href='https://papaya-begonia-100409.netlify.app/login'">Buy Silver →</button>
+                    <button class="pricing-btn silver-btn" onclick="window.location.href='https://papaya-begonia-100409.netlify.app/signup'">Start Trial &rarr;</button>
                 </div>
 
-                <!-- Gold Plan -->
+                <!-- GOLD -->
                 <div class="pricing-card gold-card">
-                    <div class="medal-icon gold-medal">🥇</div>
+                    <div class="medal-icon gold-medal">&#129351;</div>
                     <div class="pricing-header">
                         <h3 class="plan-name gold-text">GOLD</h3>
                         <div class="plan-billing">Monthly</div>
-                        <div class="plan-price gold-text">R249</div>
+                        <div class="plan-price gold-text">
+                            <span class="price-monthly">R249</span>
+                            <span class="price-yearly" style="display:none">R199</span>
+                        </div>
                         <div class="plan-period">per month</div>
                     </div>
                     <div class="pricing-features">
                         <div class="feature-row">
-                            <span class="feature-name">Admin dashboard</span>
-                            <span class="feature-check yes">✓</span>
+                            <span class="feature-name">Admin Dashboard</span>
+                            <span class="feature-check yes">&#10003;</span>
                         </div>
                         <div class="feature-row">
                             <span class="feature-name">Dashboard Overview</span>
-                            <span class="feature-check yes">✓</span>
+                            <span class="feature-check yes">&#10003;</span>
                         </div>
                         <div class="feature-row">
-                            <span class="feature-name">Multi users - 5+</span>
-                            <span class="feature-check yes">✓</span>
+                            <span class="feature-name">Unlimited Users</span>
+                            <span class="feature-check yes">&#10003;</span>
                         </div>
                         <div class="feature-row">
                             <span class="feature-name">Multi Store Inventory</span>
-                            <span class="feature-check yes">✓</span>
+                            <span class="feature-check yes">&#10003;</span>
                         </div>
                         <div class="feature-row">
                             <span class="feature-name">Client Statements</span>
-                            <span class="feature-check yes">✓</span>
+                            <span class="feature-check yes">&#10003;</span>
                         </div>
                         <div class="feature-row">
-                            <span class="feature-name">Invoicing and Quoting</span>
-                            <span class="feature-check yes">✓</span>
+                            <span class="feature-name">Invoicing &amp; Quoting</span>
+                            <span class="feature-check yes">&#10003;</span>
                         </div>
                         <div class="feature-row">
                             <span class="feature-name">Expense Management</span>
-                            <span class="feature-check yes">✓</span>
+                            <span class="feature-check yes">&#10003;</span>
                         </div>
                         <div class="feature-row">
                             <span class="feature-name">Recurring Invoices</span>
-                            <span class="feature-check yes">✓</span>
+                            <span class="feature-check yes">&#10003;</span>
                         </div>
                         <div class="feature-row">
                             <span class="feature-name">Payment Tracking</span>
-                            <span class="feature-check yes">✓</span>
+                            <span class="feature-check yes">&#10003;</span>
                         </div>
                         <div class="feature-row">
                             <span class="feature-name">Accounting Reports</span>
-                            <span class="feature-check yes">✓</span>
+                            <span class="feature-check yes">&#10003;</span>
                         </div>
                         <div class="feature-row">
-                            <span class="feature-name">Send quote via WhatsApp</span>
-                            <span class="feature-check yes">✓</span>
+                            <span class="feature-name">Send Quote via WhatsApp</span>
+                            <span class="feature-check yes">&#10003;</span>
                         </div>
                         <div class="feature-row">
                             <span class="feature-name">Tax Calculation</span>
-                            <span class="feature-check yes">✓</span>
+                            <span class="feature-check yes">&#10003;</span>
                         </div>
                         <div class="feature-row">
                             <span class="feature-name">Expense Tracking</span>
-                            <span class="feature-check yes">✓</span>
+                            <span class="feature-check yes">&#10003;</span>
                         </div>
                         <div class="feature-row">
                             <span class="feature-name">WhatsApp Integration</span>
-                            <span class="feature-check yes">✓</span>
+                            <span class="feature-check yes">&#10003;</span>
                         </div>
                         <div class="feature-row">
                             <span class="feature-name">Bank Reconciliation</span>
-                            <span class="feature-check yes">✓</span>
+                            <span class="feature-check yes">&#10003;</span>
                         </div>
                         <div class="feature-row">
                             <span class="feature-name">Financial Reports</span>
-                            <span class="feature-check yes">✓</span>
-                        </div>
-                        <div class="feature-row">
-                            <span class="feature-name">Single User</span>
-                            <span class="feature-check no">✗</span>
+                            <span class="feature-check yes">&#10003;</span>
                         </div>
                     </div>
-                    <button class="pricing-btn gold-btn" onclick="window.location.href='https://papaya-begonia-100409.netlify.app/login'">Buy Gold →</button>
+                    <button class="pricing-btn gold-btn" onclick="window.location.href='https://papaya-begonia-100409.netlify.app/signup'">Get Started &rarr;</button>
+                </div>
+
+            </div><!-- end pricing-grid -->
+
+            <!-- Trust signals -->
+            <div class="pricing-trust">
+                <div class="trust-items">
+                    <span>&#9989; No contracts</span>
+                    <span>&#9989; Cancel anytime</span>
+                    <span>&#9989; No hidden fees</span>
+                    <span>&#9989; First month free &mdash; no credit card required</span>
+                </div>
+                <div class="trust-badges">
+                    <span class="trust-badge">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        SSL Secured
+                    </span>
+                    <span class="trust-badge">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+                        Visa / Mastercard
+                    </span>
+                    <span class="trust-badge">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        POPIA Compliant
+                    </span>
+                    <span class="trust-badge">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 17 21 12 16 7"/><path d="M21 12H9M3 21V3"/></svg>
+                        Data Stored Securely in the Cloud
+                    </span>
                 </div>
             </div>
         </section>
 
-        <!-- built for southern africa / currencies -->
+        <!-- FAQ -->
+        <section id="faq" class="faq-section">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <p>Everything you need to know before getting started</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Is there a free trial?
+                        <svg class="faq-arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! Your first month is completely free &mdash; no credit card required. You get full access to explore all features before committing to a paid plan.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Can I cancel anytime?
+                        <svg class="faq-arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely. There are no long-term contracts. You can cancel your subscription at any time, and you won't be charged again after cancellation.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Is my data secure?
+                        <svg class="faq-arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. Invoice360 is POPIA compliant and uses enterprise-grade SSL encryption. Your data is stored securely in the cloud and backed up regularly.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Can I use Invoice360 for multiple companies?
+                        <svg class="faq-arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. You can manage multiple businesses from a single account. Each company has its own separate dashboard, clients, and invoices.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Does it work on mobile?
+                        <svg class="faq-arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Invoice360 is fully responsive and works on any device &mdash; desktop, tablet, or smartphone. Access your account and send invoices on the go.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        How long does setup take?
+                        <svg class="faq-arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Most businesses are up and running within 5 minutes. Simply sign up, add your company details, and you're ready to create your first invoice.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CURRENCY MARQUEE -->
         <div class="currency-section">
             <h2 class="section-title" style="margin-bottom: 30px; color: white;">Built for Southern Africa</h2>
-            
             <div class="marquee-container">
                 <div class="marquee-content">
-                    <!-- First set of countries -->
-                    <div class="currency-item">
-                        <span class="country-flag">🇿🇦</span>
-                        <span class="country-name">South Africa</span>
-                        <span class="currency-code">ZAR</span>
-                    </div>
-                    <div class="currency-item">
-                        <span class="country-flag">🇳🇦</span>
-                        <span class="country-name">Namibia</span>
-                        <span class="currency-code">NAD</span>
-                    </div>
-                    <div class="currency-item">
-                        <span class="country-flag">🇧🇼</span>
-                        <span class="country-name">Botswana</span>
-                        <span class="currency-code">BWP</span>
-                    </div>
-                    <div class="currency-item">
-                        <span class="country-flag">🇱🇸</span>
-                        <span class="country-name">Lesotho</span>
-                        <span class="currency-code">LSL</span>
-                    </div>
-                    <div class="currency-item">
-                        <span class="country-flag">🇸🇿</span>
-                        <span class="country-name">Eswatini</span>
-                        <span class="currency-code">SZL</span>
-                    </div>
-                    <div class="currency-item">
-                        <span class="country-flag">🇿🇲</span>
-                        <span class="country-name">Zambia</span>
-                        <span class="currency-code">ZMW</span>
-                    </div>
-                    <div class="currency-item">
-                        <span class="country-flag">🇿🇼</span>
-                        <span class="country-name">Zimbabwe</span>
-                        <span class="currency-code">ZiG</span>
-                    </div>
-                    <div class="currency-item">
-                        <span class="country-flag">🇲🇿</span>
-                        <span class="country-name">Mozambique</span>
-                        <span class="currency-code">MZN</span>
-                    </div>
-                    <div class="currency-item">
-                        <span class="country-flag">🇲🇼</span>
-                        <span class="country-name">Malawi</span>
-                        <span class="currency-code">MWK</span>
-                    </div>
-                    <div class="currency-item">
-                        <span class="country-flag">🇦🇴</span>
-                        <span class="country-name">Angola</span>
-                        <span class="currency-code">AOA</span>
-                    </div>
-                    
-                    <!-- Duplicate set for seamless loop -->
-                    <div class="currency-item">
-                        <span class="country-flag">🇿🇦</span>
-                        <span class="country-name">South Africa</span>
-                        <span class="currency-code">ZAR</span>
-                    </div>
-                    <div class="currency-item">
-                        <span class="country-flag">🇳🇦</span>
-                        <span class="country-name">Namibia</span>
-                        <span class="currency-code">NAD</span>
-                    </div>
-                    <div class="currency-item">
-                        <span class="country-flag">🇧🇼</span>
-                        <span class="country-name">Botswana</span>
-                        <span class="currency-code">BWP</span>
-                    </div>
-                    <div class="currency-item">
-                        <span class="country-flag">🇱🇸</span>
-                        <span class="country-name">Lesotho</span>
-                        <span class="currency-code">LSL</span>
-                    </div>
-                    <div class="currency-item">
-                        <span class="country-flag">🇸🇿</span>
-                        <span class="country-name">Eswatini</span>
-                        <span class="currency-code">SZL</span>
-                    </div>
-                    <div class="currency-item">
-                        <span class="country-flag">🇿🇲</span>
-                        <span class="country-name">Zambia</span>
-                        <span class="currency-code">ZMW</span>
-                    </div>
-                    <div class="currency-item">
-                        <span class="country-flag">🇿🇼</span>
-                        <span class="country-name">Zimbabwe</span>
-                        <span class="currency-code">ZiG</span>
-                    </div>
-                    <div class="currency-item">
-                        <span class="country-flag">🇲🇿</span>
-                        <span class="country-name">Mozambique</span>
-                        <span class="currency-code">MZN</span>
-                    </div>
-                    <div class="currency-item">
-                        <span class="country-flag">🇲🇼</span>
-                        <span class="country-name">Malawi</span>
-                        <span class="currency-code">MWK</span>
-                    </div>
-                    <div class="currency-item">
-                        <span class="country-flag">🇦🇴</span>
-                        <span class="country-name">Angola</span>
-                        <span class="currency-code">AOA</span>
-                    </div>
+                    <div class="currency-item"><span class="country-flag">&#127480;&#127462;</span><span class="country-name">South Africa</span><span class="currency-code">ZAR</span></div>
+                    <div class="currency-item"><span class="country-flag">&#127475;&#127462;</span><span class="country-name">Namibia</span><span class="currency-code">NAD</span></div>
+                    <div class="currency-item"><span class="country-flag">&#127463;&#127484;</span><span class="country-name">Botswana</span><span class="currency-code">BWP</span></div>
+                    <div class="currency-item"><span class="country-flag">&#127473;&#127480;</span><span class="country-name">Lesotho</span><span class="currency-code">LSL</span></div>
+                    <div class="currency-item"><span class="country-flag">&#127480;&#127487;</span><span class="country-name">Eswatini</span><span class="currency-code">SZL</span></div>
+                    <div class="currency-item"><span class="country-flag">&#127487;&#127474;</span><span class="country-name">Zambia</span><span class="currency-code">ZMW</span></div>
+                    <div class="currency-item"><span class="country-flag">&#127487;&#127484;</span><span class="country-name">Zimbabwe</span><span class="currency-code">ZiG</span></div>
+                    <div class="currency-item"><span class="country-flag">&#127474;&#127487;</span><span class="country-name">Mozambique</span><span class="currency-code">MZN</span></div>
+                    <div class="currency-item"><span class="country-flag">&#127474;&#127484;</span><span class="country-name">Malawi</span><span class="currency-code">MWK</span></div>
+                    <div class="currency-item"><span class="country-flag">&#127462;&#127476;</span><span class="country-name">Angola</span><span class="currency-code">AOA</span></div>
+                    <!-- Duplicate for seamless loop -->
+                    <div class="currency-item"><span class="country-flag">&#127480;&#127462;</span><span class="country-name">South Africa</span><span class="currency-code">ZAR</span></div>
+                    <div class="currency-item"><span class="country-flag">&#127475;&#127462;</span><span class="country-name">Namibia</span><span class="currency-code">NAD</span></div>
+                    <div class="currency-item"><span class="country-flag">&#127463;&#127484;</span><span class="country-name">Botswana</span><span class="currency-code">BWP</span></div>
+                    <div class="currency-item"><span class="country-flag">&#127473;&#127480;</span><span class="country-name">Lesotho</span><span class="currency-code">LSL</span></div>
+                    <div class="currency-item"><span class="country-flag">&#127480;&#127487;</span><span class="country-name">Eswatini</span><span class="currency-code">SZL</span></div>
+                    <div class="currency-item"><span class="country-flag">&#127487;&#127474;</span><span class="country-name">Zambia</span><span class="currency-code">ZMW</span></div>
+                    <div class="currency-item"><span class="country-flag">&#127487;&#127484;</span><span class="country-name">Zimbabwe</span><span class="currency-code">ZiG</span></div>
+                    <div class="currency-item"><span class="country-flag">&#127474;&#127487;</span><span class="country-name">Mozambique</span><span class="currency-code">MZN</span></div>
+                    <div class="currency-item"><span class="country-flag">&#127474;&#127484;</span><span class="country-name">Malawi</span><span class="currency-code">MWK</span></div>
+                    <div class="currency-item"><span class="country-flag">&#127462;&#127476;</span><span class="country-name">Angola</span><span class="currency-code">AOA</span></div>
                 </div>
             </div>
         </div>
 
-        <!-- testimonials -->
-        <div class="testimonials-section">
-            <div class="section-title">
-                <h2>Trusted by Business Owners</h2>
-            </div>
-            <div class="testimonials">
-                <div class="testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <p>"Invoice360 transformed how we handle billing. The multi-currency support is fantastic for our regional clients."</p>
-                    <div class="customer">Michael D. <small>Director, TechSolutions ZA</small></div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <p>"Simple, fast, and professional. My clients love the invoices I send now. It looks very polished."</p>
-                    <div class="customer">Sarah J. <small>Freelance Consultant</small></div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <p>"The dashboard gives me a clear picture of my finances instantly. Highly recommended for any SME owner."</p>
-                    <div class="customer">David K. <small>Owner, K-Retail Botswana</small></div>
-                </div>
-            </div>
-        </div>
-
-        <!-- cta -->
+        <!-- CTA -->
         <div class="cta-block">
             <h2>Start managing your business invoices today</h2>
             <p>Join hundreds of businesses simplifying their finance operations with Invoice360.</p>
-            <button class="btn-white" onclick="window.location.href='https://papaya-begonia-100409.netlify.app/login'">Get Started Free →</button>
+            <button class="btn-white" onclick="window.location.href='https://papaya-begonia-100409.netlify.app/signup'">Get Started Free &rarr;</button>
         </div>
-    </div> <!-- This closes the container div -->
 
-    <!-- Footer - Full Width, Clean Design -->
-     <footer class="footer">
+    </div><!-- end .container -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
         <div class="footer-container">
-            <!-- Main footer content - 4 columns -->
             <div class="footer-main">
-                <!-- Column 1: Logo and Social -->
+
                 <div class="footer-col">
                     <div class="footer-logo"><img src="assets/footer-logo.png" alt="Invoice360 Logo"></div>
                     <p class="footer-description">The all-in-one financial platform for freelancers and small businesses across Southern Africa.</p>
                     <div class="social-links">
                         <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="social-icon" aria-label="Email"><i class="far fa-envelope"></i></a>
+                        <a href="mailto:support@invoice360.co.za" class="social-icon" aria-label="Email"><i class="far fa-envelope"></i></a>
                     </div>
+                    <p class="footer-support-email"><a href="mailto:support@invoice360.co.za">support@invoice360.co.za</a></p>
                 </div>
-                
-                <!-- Column 2: Quick Links -->
+
                 <div class="footer-col">
                     <h4 class="footer-heading">Quick Links</h4>
                     <ul class="footer-links">
@@ -566,18 +599,17 @@
                         <li><a href="#pricing">Pricing</a></li>
                     </ul>
                 </div>
-                
-                <!-- Column 3: Support -->
+
                 <div class="footer-col">
                     <h4 class="footer-heading">Support</h4>
                     <ul class="footer-links">
                         <li><a href="#">Help Center</a></li>
-                        <li><a href="#">FAQs</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#faq">FAQs</a></li>
+                        <li><a href="mailto:support@invoice360.co.za">Contact Us</a></li>
+                        <li><a href="https://wa.me/27000000000" target="_blank">WhatsApp Support</a></li>
                     </ul>
                 </div>
-                
-                <!-- Column 4: Legal -->
+
                 <div class="footer-col">
                     <h4 class="footer-heading">Legal</h4>
                     <ul class="footer-links">
@@ -585,14 +617,20 @@
                         <li><a href="#">Privacy Policy</a></li>
                     </ul>
                 </div>
+
             </div>
-            
-            <!-- Bottom copyright -->
             <div class="footer-bottom">
-                <p class="copyright">© 2026 Invoice360. All rights reserved. Made in South Africa 🇿🇦</p>
+                <p class="copyright">&copy; 2026 Invoice360. All rights reserved. Made in South Africa &#127480;&#127462;</p>
             </div>
         </div>
     </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON -->
+    <a href="https://wa.me/27000000000" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="white">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+    </a>
 
     <script src="script.js"></script>
 </body>
